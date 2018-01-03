@@ -18,10 +18,22 @@
 		 echo "$si<br>";//双引号输出变量值
 		 echo '$si';//单引号输出，内容是啥输出啥
 		 echo "<br>";
-		 echo <<< std
-		       we are happy,
-		       so..............
-std;         //结束标记必须另起一行，且前面不能有空格
+		 // 结束标记必须另起一行，且前面不能有空格
+		 echo <<<std
+		 we are happy,
+		 so much.
+std;
+         echo "<hr>";
+
+
+         // 整型
+         $inte1=123456;
+         $inte2=01234;
+         $inte3=0x66;
+         echo $inte1."<br>";
+         echo $inte2."<br>";
+         echo $inte3;
+
 	 ?>
 </body>
 </html>
